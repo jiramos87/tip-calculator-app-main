@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body class="body">
+  <div class="logo"></div>
+  <div class="main-card">
+    <div class="input-side">
+      <label for="bill" class="label-text">Bill</label></br>
+      <input type="number" class="bill" id="bill"></br>
+      <label for="tip-selector-grid" class="label-text">Select Tip %</label></br>
+      <div class="tip-selector-grid">
+        <button class="grid-item" onclick="tipPercentage(5)">5%</button>
+        <button class="grid-item" onclick="tipPercentage(10)">10%</button>
+        <button class="grid-item" onclick="tipPercentage(15)">15%</button>
+        <button class="grid-item" onclick="tipPercentage(25)">25%</button>
+        <button class="grid-item" onclick="tipPercentage(50)">50%</button>
+        <input type="number" class="custom-tip" id="custom-tip" placeholder="Custom">
+      </div>
+      <label for="n-of-people" class="label-text">Number of People</label></br>
+      <input type="number" class="n-of-people" id="n-of-people">
+      
+    </div>
+    <div class="output-card">
+      <div class="output-grid">
+        <div class="output-div">
+          <div class="tip-text">
+            <div class="amount">Tip Amount</div>
+            <div class="person">/ person</div> 
+          </div>
+          <div class="tip-output" id="tip-output">$0</div>
+        </div> 
+
+        <div class="output-div">
+          <div class="total-text">
+            <div class="amount">Total</div>
+            <div class="person">/ person</div> 
+          </div>
+          <div class="total-output" id="total-output">$0</div>
+        </div> 
+
+      </div>
+      <button class="reset-button" onclick="reset()">RESET</button>
+    </div>
+
+  </div>
+<script src="scripts/main.js"></script>
+</body>
+</html>

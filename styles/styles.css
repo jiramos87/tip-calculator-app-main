@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);   
+    width: 375px;
+    margin: 0px;
+}
+
+.logo {
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: 75px 50px;
+    width: 75px;
+    height: 50px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.main-card {
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.label-text {
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.bill {
+    background-color: hsl(189, 41%, 97%);
+    border-bottom-left-radius: 6px;
+    border-top-left-radius:  6px;
+    background-image: url(../images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 10px;
+    width: 100%;
+    height: 50px;
+    font-weight: 700;
+    text-align: right;
+    border: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-bottom: 20px;
+}
+
+
+.tip-selector-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 20px;
+}
+
+.grid-item {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border: none;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.grid-item:hover {
+    background-color: hsl(185, 41%, 84%);
+    cursor: pointer;
+}
+
+.grid-item:focus {
+    background-color: hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+
+
+
+.custom-tip {
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    margin: 10px;
+    border-radius: 4px;
+    text-align: right;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+.custom-tip:hover {
+    border: solid;
+    border-color: hsl(186, 14%, 43%);
+    cursor: pointer;
+}
+
+
+.n-of-people {
+    background-color: hsl(189, 41%, 97%);
+    border-bottom-left-radius: 6px;
+    border-top-left-radius:  6px;
+    background-image: url(../images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 10px;
+    width: 100%;
+    height: 50px;
+    font-weight: 700;
+    text-align: right;
+    border: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-bottom: 20px;
+}   
+
+.output-card {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.output-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.amount {
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.person {
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.output-div {
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tip-output {
+    text-align: right;
+    color: hsl(172, 67%, 45%);
+    font-size: 30px;
+    margin-top: -5px;
+}
+
+.total-output {
+    text-align: right;
+    color: hsl(172, 67%, 45%);
+    font-size: 30px;
+    margin-top: -5px;
+}
+
+.reset-button {
+    background-color:hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    width: 100%;
+    height: 46px;
+    font-size: 20px;
+    margin: auto;
+    border-radius: 6px;
+    border: none;
+}
+
+.reset-button:hover {
+    background-color: hsl(185, 41%, 84%);
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        width: 1440px;
+        height: auto;
+        padding: 50px 300px 200px 300px;
+    }  
+
+    .main-card {
+        width: 100%;
+        padding: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    .input-side {
+       width: auto;
+       margin: 20px;
+    }
+
+    .output-card {
+        width: auto;
+        padding: 20px;
+        margin-right: 20px;
+    }
+
+    .reset-button {
+        margin-top: 150px;
+    }
+
+    .amount {
+        
+        font-size: 18px;
+    }
+    
+    .person {
+       
+        font-size: 15px;
+    }
+
+    .tip-output {
+        font-size: 38px;
+    }
+    
+    .total-output {
+        font-size: 38px;
+    }
+
+    .tip-selector-grid {
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: auto auto;
+       
+    }
+    .bill {
+      
+        width: 100%;
+        
+    }
+
+    .n-of-people {
+      
+        width: 100%;
+      
+    }   
+    .grid-item {
+        width: auto;
+    }
+}
+
+
+
+
